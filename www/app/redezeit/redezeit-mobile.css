@@ -1,0 +1,127 @@
+
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(.95);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+@keyframes antipulse {
+  0% {
+     transform: scale(1);
+  }
+  50% {
+       transform: scale(1.05263157894737);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+img.top-logo {
+	border: none;
+	height: 3.4em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.modal div.row.user {
+  border-bottom: solid gray 0.2em;
+}
+
+div.modal div.row.user div.userName {
+  font-size: 1.6em;
+}
+
+div.modal div.user-add input {
+	font-size: 1.6em;
+}
+
+div.modal div.row.user a.icon-button i.material-icons , div.modal div.user-add a.icon-button i.material-icons {
+  font-size: 2rem;
+}
+
+/* *************** */
+/* speaker-time-ui */
+/* *************** */
+div.speaker-time-ui div.user {
+	background-color: rgba(104, 89, 77, 0.77);
+	border: 0.3em solid hsla(0, 0%, 100%, 0.1);
+	border-radius: 1em;
+	color: white;
+}
+
+div.speaker-time-ui div.user {
+	margin: 1em;
+}
+
+div.speaker-time-ui div.user.selected {
+	xbackground-color: rgba(10, 53, 84, 0.1);
+	border-color: yellow;
+	animation: pulse infinite 1s;
+}
+
+div.speaker-time-ui div.user div.name {
+	margin: 0.2em;
+	font-size: 2em;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.speaker-time-ui div.user div.time {
+	margin: 0.2em;
+	color: yellow;
+	font-size: 1.8em;
+	xbackground-color: #8c784a;
+	padding: 0.1em;
+	border-radius: 0.6em;
+	text-align: center;
+	
+}
+
+div.speaker-time-ui div.user.selected >* {
+	animation: antipulse infinite 1s;
+
+	}
+
+div.speaker-time-ui div.user.break div.time {
+	visibility: hidden;
+}
+
+div.speaker-time-ui div.user div.canvas-holder {
+	text-align: center;
+	margin: 0.2em;
+}
+
+xxxdiv.speaker-time-ui div.user div.canvas-holder canvas {
+	height: 8em;
+	width: 8em;
+}
+
+}
+
+/* *** */
+/* log */
+/* *** */
+#log {
+	max-height: 3em;
+	overflow-y: auto;
+}
+
+#logo-main div.section {
+	background-color: hsla(238, 80%, 16%, 0.67);
+	padding: 1em;
+	margin-top: 2em;
+	color: white;
+	font-size: 1.2em;
+}

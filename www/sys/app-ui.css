@@ -1,0 +1,925 @@
+/* *********************** */
+/* MATERIAL DESIGN SUPPORT */
+/* *********************** */
+div.elevation-1 {
+	
+}
+
+div.elevation-1 {
+	
+}
+
+.visible-false {
+	display: none !important;
+	visibility: hidden;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+div.mp div.title2 * {
+	color: gray;
+}
+
+div.mp div.title2 {
+	color: gray;
+}
+
+div.mp div.main div.new-meeting-type {
+	background: white;
+}
+
+div.buttons {
+	white-space: nowrap;
+	padding: 0.2em;
+	
+}
+
+div.buttons a.ui-button {
+	margin-right: 0.2em;
+}
+
+div.app-ui-text-view {
+	border: solid 1px gray;
+	padding: 1px;
+}
+
+div.app-ui-login-userId * {
+	width: 16em;
+	border: gray 1px solid;
+}
+
+div.app-ui-login-password * {
+	width: 16em;
+	border: gray 1px solid;
+}
+
+div.app-ui-login-userId {
+	text-align: center;
+}
+
+div.app-ui-login-password {
+	text-align: center;
+}
+
+div.app-login {
+	width: 360px;
+}
+
+div.app-login * {
+	text-align: center;
+	margin: 0.2em 0em;
+}
+
+div.login-show-less {
+	display: none;
+}
+
+a.app-ui-link {
+	cursor: pointer;
+}
+
+div.app-login-login-button a.app-ui-link {
+	margin-left: 1em;
+}
+
+div.app-login input {
+	width: 300px;
+	padding: 0px;
+	margin: 0px;
+	left: 0px;
+	position: relative;
+	border-color: lightGray;
+	xborder: none;
+	xborder-bottom: 1px solid gray;
+	height: 20px;
+	xbox-shadow: 1px 0px 30em blue;
+}
+
+div.loginIcon * {
+	text-align: center;
+	border: none;
+	box-shadow: 2px 2px 10px lightgray;
+}
+
+div.loginTitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+div.app-ui-login-password.mobile {
+	text-align: center;
+}
+
+div.app-ui-login.mobile {
+	text-align: center;
+}
+
+div.app-ui-login.mobile * {
+	width: 16em;
+	border: gray 1px solid;
+}
+
+input[type="file"] {
+	border: 0px lightgray solid;
+	height: 18px;
+	padding-top: 0.4em;
+	vertical-align: bottom;
+	display: inline-block;
+	border-bottom: 1px lightgray solid;
+}
+
+div.app-wizard-title {
+	display: inline-block;
+	font-weight: bold;
+	margin: 0em, 0.4em;
+}
+
+/* ------------ */
+/* OBJECT TABLE */
+/* ------------ */
+table.object-table {
+	border-spacing: 0px;
+}
+
+/*------------------------------*\
+    Grid System
+    From http://www.sitepoint.com/understanding-css-grid-systems/
+\*------------------------------*/
+div.grid-ui .row, .column {
+	box-sizing: border-box;
+}
+
+div.grid-ui .row:before, .row:after {
+	content: " ";
+	display: table;
+}
+
+div.grid-ui .row:after {
+	clear: both;
+}
+
+div.grid-ui .column {
+	position: relative;
+	float: left;
+	display: block;
+}
+
+div.grid-ui .column+.column {
+	margin-left: 1.6%;
+}
+
+div.grid-ui .column-1 {
+	width: 6.86666666667%;
+}
+
+div.grid-ui .column-2 {
+	width: 15.3333333333%;
+}
+
+div.grid-ui .column-3 {
+	width: 23.8%;
+}
+
+div.grid-ui .column-4 {
+	width: 32.2666666667%;
+}
+
+div.grid-ui .column-5 {
+	width: 40.7333333333%;
+}
+
+div.grid-ui .column-6 {
+	width: 49.2%;
+}
+
+div.grid-ui .column-7 {
+	width: 57.6666666667%;
+}
+
+div.grid-ui .column-8 {
+	width: 66.1333333333%;
+}
+
+div.grid-ui .column-9 {
+	width: 74.6%;
+}
+
+div.grid-ui .column-10 {
+	width: 83.0666666667%;
+}
+
+div.grid-ui .column-11 {
+	width: 91.5333333333%;
+}
+
+div.grid-ui .column-12 {
+	width: 100%;
+	margin-left: 0;
+}
+
+@media only screen and (max-width: 550px) {
+	div.grid-ui .column-1, div.grid-ui .column-2, div.grid-ui .column-3, div.grid-ui .column-4,
+		div.grid-ui .column-5, div.grid-ui .column-6, div.grid-ui .column-7,
+		div.grid-ui .column-8, div.grid-ui .column-9, div.grid-ui .column-10,
+		div.grid-ui .column-11, div.grid-ui .column-12 {
+		float: none;
+		width: auto;
+	}
+	div.grid-ui .column+.column {
+		margin-left: 0;
+	}
+}
+
+/*------------------------------*\
+    Styling
+\*------------------------------*/
+div.grid-ui .column {
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #777;
+	padding: 5px;
+	min-height: 30px;
+	text-align: center;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+div.grid-ui .column .column {
+	color: #eee;
+	background: #333;
+	border-color: #000;
+}
+
+.p {
+	font-size: 14px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+@media only screen and (max-width: 550px) {
+	.row {
+		margin-bottom: 0;
+	}
+	div.grid-ui .column {
+		margin-bottom: 10px;
+	}
+	.row:last-child .column:last-child {
+		margin-bottom: 0;
+	}
+}
+
+div.stacked2-ui div.header div.title {
+	display: inline-block;
+	font-size: 1.6em;
+	padding: 0.4em;
+	font-weight: bold;
+	color: gray;
+}
+
+div.stacked2-ui div.holder {
+	/* border: gray dashed 1px; */
+	padding: 0.4em;
+}
+
+div.stacked2-ui div.holder.stack-level-0 {
+	margin-left: 1em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-1 {
+	margin-left: 4em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-2 {
+	margin-left: 7em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-3 {
+	margin-left: 10em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.header div.buttons {
+	display: inline-block;
+	float: right;
+	padding: 0.4em;
+}
+
+/* --------* */
+/* SECVAL UI */
+/* --------* */
+div.secret-input-ui {
+	padding: 4px;
+	border: dashed 1px gray;
+}
+
+div.secret-input-ui input.value {
+	width: 60em;
+}
+
+/* --------------* */
+/* SECVAL ADMIN UI */
+/* --------------* */
+div.secval-admin-ui {
+	/* position: absolute; */
+	background-color: rgb(244, 244, 244);
+	right: 1em;
+	top: 1em;
+	padding: 1em;
+	border: 2px solid lightGray;
+}
+
+div.secval-admin-ui div.title {
+	font-size: 1.4em;
+	line-height: 2em;
+}
+
+div.secval-admin-ui table {
+	border-collapse: collapse;
+}
+
+div.secval-admin-ui table tr {
+	border-top: 1px solid lightGray;
+	display: block;
+}
+
+div.secval-admin-ui table tr td {
+	xborder: 1px solid lightGray;
+}
+
+div.secval-admin-ui table tr td.name {
+	width: 12em;
+	font-weight: bold;
+}
+
+div.secval-admin-ui table tr td.value {
+	width: 16em;
+}
+
+div.secval-admin-ui table tr td.value input {
+	width: 14em;
+}
+
+div.secval-admin-ui table tr td.value {
+	width: 14em;
+}
+
+div.secval-admin-ui div.toolbar a.ui-button.close {
+	position: absolute;
+	top: -0.8em;
+	right: -0.8em;
+}
+
+/* ---------------------- */
+/* CONFIRMATION DIALOG UI */
+/* ---------------------- */
+div.confirmation-dialog-ui {
+	position: absolute;
+	top: 5em;
+	right: 5em;
+	left: 5em;
+	bottom: 5em;
+	padding: 10em;
+	margin: 2em;
+	border: 2px solid gray;
+	background-color: rgba(255, 255, 255, 0.94);
+	font-size: 2em;
+	line-height: 2em;
+}
+
+div.confirmation-text {
+	
+}
+
+/* FILE UPLOAD UI */
+form.file-upload-ui {
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+}
+
+form.file-upload-ui input.file-upload {
+	position: absolute;
+	visibility: hidden;
+}
+
+form.file-upload-ui div.file-holder {
+	display: inline-block;
+	border-bottom: 1px gray dashed;
+	min-width: 10em;
+	margin-left: 2em;
+	margin-right: 2em;
+	vertical-align: bottom;
+}
+
+form.file-upload-ui div.message {
+	margin-top: 1em;
+	color: gray;
+	font-style: italic;
+}
+
+/* FILE LIST AREA UI */
+div.file-list-area-ui {
+	xborder: gray dashed 1px;
+	xmin-height: 10em;
+	xpadding-left: 2em;
+}
+
+div.file-area-footer form.file-upload-ui {
+	margin: 1em;
+	border: solid 1px #BBBBBB;
+	padding: 1em;
+	border-radius: 2px;
+}
+
+div.file-list-area-ui.upload-begin {
+	border: red dashed 1px;
+	background-image: url('../img/ajax-loader.gif');
+	BACKGROUND-REPEAT: no-repeat;
+	padding-left: 2em;
+}
+
+/* -------- */
+/* BUTTON 2 */
+/----------
+* /
+div.button-2 {
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px;
+	color: blue;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+a.app-ui-button {
+	cursor: pointer;
+	display: inline-block;
+	padding: 4px;
+	color: blue;
+	text-decoration: none;
+	letter-spacing: 1px;
+	border: blue 1px solid;
+	border-radius: 2px;
+	margin: 4px;
+}
+
+a.app-ui-button:hover {
+	background-color: lightgray;
+}
+
+/* ---------------- */
+/* USER MESSAGES UI */
+/* ---------------- */
+div.user-messages-ui {
+	padding: 0.3em;
+}
+
+div.user-messages-ui div {
+	border-radius: 0.4em;
+	padding: 0.4em;
+}
+
+div.toggle-link {
+	padding: 0.4em;
+}
+
+/* ------------- */
+/* DOWNLOAD FILE */
+/* ------------- */
+span.download-link {
+	display: block;
+	padding: 0.4em;
+}
+
+/* ---------------- */
+/* DOWNLOAD FILE    */
+/* ---------------- */
+div.select-ui select {
+	margin-right: 1em;
+}
+
+/* ---------------------- */
+/* PROCESS LOG UI -start- */
+/* ---------------------- */
+div.process-log-ui div.message {
+	border: gray solid 1px;
+}
+
+div.process-log-line {
+	border: gray solid 1px;
+}
+
+div.process-log-cell {
+	width: 14em;
+	display: inline-block;
+}
+
+div.process-log-cell div.title {
+	font-weight: bold;
+}
+
+div.process-log-ui table td {
+	padding: 0.8em;
+	border: gray solid 1px;
+	vertical-align: baseline;
+	margin: 0px;
+}
+
+/* -------------------- */
+/* PROCESS LOG UI -end- */
+/* -------------------- */
+
+/* ********** */
+/* STACKED UI */
+/* ********** */
+div.stacked-ui div.header div.title {
+	display: inline-block;
+}
+
+div.action-link {
+	padding: 3px;
+	margin: 0px 3px 0px 1px;
+	border: 1px solid #6666ff;
+	display: inline;
+	width: 1%;
+	height: 1%;
+	white-space: nowrap;
+}
+
+a.action-link {
+	padding: 1px 2px 1px 2px;
+	text-decoration: none;
+	letter-spacing: 1pt;
+	color: #6666ff;
+	font-size: 0.9em;
+	font-weight: bold;
+	display: inline-block;
+	line-height: normal;
+	margin: 0px 3px 0px 1px;
+	border: 1px solid #6666ff;
+}
+
+a.action-link:link {
+	text-decoration: None;
+}
+
+a.action-link:active {
+	color: #6666ff;
+	text-decoration: Underline;
+}
+
+a.action-link:visited {
+	text-decoration: None;
+}
+
+a.action-link:hover {
+	color: #0000FF;
+	background-color: #E8E8E8;
+	text-decoration: None;
+}
+
+/* *********** */
+/* STACKED2 UI */
+/* *********** */
+div.stacked2-ui div.header div.title {
+	display: inline-block;
+	font-size: 1.6em;
+	padding: 0.4em;
+	font-weight: bold;
+	color: gray;
+}
+
+div.stacked2-ui div.holder {
+	/* border: gray dashed 1px; */
+	padding: 0.4em;
+}
+
+div.stacked2-ui div.holder.stack-level-0 {
+	margin-left: 1em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-1 {
+	margin-left: 4em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-2 {
+	margin-left: 7em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.holder.stack-level-3 {
+	margin-left: 10em;
+	margin-top: 0.3em;
+}
+
+div.stacked2-ui div.header div.buttons {
+	display: inline-block;
+	float: right;
+	padding: 0.4em;
+}
+
+/* ********* */
+/* SECVAL UI */
+/* ********* */
+div.secret-input-ui {
+	padding: 4px;
+	border: dashed 1px gray;
+}
+
+div.secret-input-ui input.value {
+	width: 60em;
+}
+
+/* *************** */
+/* SECVAL ADMIN UI */
+/* *************** */
+div.secval-admin-ui {
+	/* position: absolute; */
+	background-color: rgb(244, 244, 244);
+	right: 1em;
+	top: 1em;
+	padding: 1em;
+	border: 2px solid lightGray;
+}
+
+div.secval-admin-ui div.title {
+	font-size: 1.4em;
+	line-height: 2em;
+}
+
+div.secval-admin-ui table {
+	border-collapse: collapse;
+}
+
+div.secval-admin-ui table tr {
+	border-top: 1px solid lightGray;
+	display: block;
+}
+
+div.secval-admin-ui table tr td {
+	xborder: 1px solid lightGray;
+}
+
+div.secval-admin-ui table tr td.name {
+	width: 12em;
+	font-weight: bold;
+}
+
+div.secval-admin-ui table tr td.value {
+	width: 16em;
+}
+
+div.secval-admin-ui table tr td.value input {
+	width: 14em;
+}
+
+div.secval-admin-ui table tr td.value {
+	width: 14em;
+}
+
+div.secval-admin-ui div.toolbar a.ui-button.close {
+	position: absolute;
+	top: -0.8em;
+	right: -0.8em;
+}
+
+div.secret-input-ui-locked {
+	content: 'locked: ';
+}
+
+/* ********************** */
+/* CONFIRMATION DIALOG UI */
+/* ********************** */
+div.confirmation-dialog-ui {
+	position: absolute;
+	top: 5em;
+	right: 5em;
+	left: 5em;
+	bottom: 5em;
+	padding: 10em;
+	margin: 2em;
+	border: 2px solid gray;
+	background-color: rgba(255, 255, 255, 0.94);
+	font-size: 2em;
+	line-height: 2em;
+}
+
+div.confirmation-text {
+	
+}
+
+/* ***************** */
+/* LOGGER UI -begin- */
+/* ***************** */
+div.logger-ui {
+	position: fixed;
+	bottom: 0px;
+	left: 2em;
+	right: 2em;
+	height: 3em;
+	background-color: lightGray;
+	overflow: auto;
+	border: white 2px solid;
+	border-radius: 1em 1em 0em 0em;
+	padding-right: 1em;
+	padding-left: 1em;
+	z-index: 1000;
+	opacity: 0.9;
+}
+
+div.logger-ui.large {
+	height: 30em;
+}
+
+div.log-entry {
+	white-space: pre;
+	border: white 1px solid;
+	/*  border collapse fix */
+	margin-bottom: -1px;
+}
+
+div.logger-ui div.buttons {
+	position: absolute;
+	top: 2px;
+	right: 2em;
+}
+
+div.log-entry-100 {
+	color: black;
+}
+
+div.log-entry-200 {
+	color: green;
+}
+
+div.log-entry-300 {
+	color: orange;
+}
+
+div.log-entry-400 {
+	color: red;
+}
+
+div.string-ui {
+	width: inherit;
+}
+
+div.string-ui input {
+	width: inherit;
+}
+
+div.icon-button-ui {
+	display: inline-block;
+	font-family: "Ionicons";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-rendering: auto;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	/*  ICON SPECIFIC SIZE */
+	font-size: 1em;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	color: blue;
+	border: 0.1em solid blue;
+	padding: 0.2em;
+	background-color: white;
+}
+
+div.icon-button-ui:hover {
+	background-color: lightGray;
+}
+
+div.icon-button-ui:before {
+	content: "\f101";
+}
+
+div.icon-button-ui-update:before {
+	content: "\f2bf";
+}
+
+/* ******************** */
+/* FILE AREA UI -begin- */
+/* ******************** */
+div.file-area-ui {
+	min-height: 6em;
+	border: green dashed 1px;
+	position: relative;
+}
+
+div.file-area-ui div.file-area-ui-drop-files-here {
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	font-style: italic;
+}
+
+div.file-area-ui div.file-area-ui-message-box {
+	position: absolute;
+	padding: 1em;
+	border: gray solid 1px;
+	border-radius: 1em;
+	top: 30%;
+	left: 40%;
+	background-color: white;
+}
+
+div.file-area-ui div.file-container {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 240px;
+	height: 300px;
+}
+
+div.file-area-ui div.file-container div.front {
+	padding: 1em;
+}
+
+div.file-area-ui div.file-container div.front  a.open-file {
+	display: block;
+}
+
+div.file-area-ui div.file-container div.front a img.file-preview {
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+div.file-area-ui div.file-container div.front a img.file-preview.portrait
+	{
+	height: 200px;
+}
+
+div.file-area-ui div.file-container div.front a img.file-preview.landscape
+	{
+	height: 142px;
+	padding-bottom: 20px;
+}
+
+div.file-area-ui div.file-container div.front a i.fa {
+	font-size: 100px;
+	color: #B9B9B9;
+	display: block;
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+
+div.file-area-ui div.file-container div.front div.front-footer {
+	width: 180px;
+	overflow: hidden;
+	padding: 0.6em;
+	position: absolute;
+	bottom: 0.2em;
+}
+
+div.file-area-ui div.file-container div.front div.front-footer div.filename
+	{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.8em;
+	white-space: nowrap;
+}
+
+/* ****************** */
+/* FILE AREA UI -end- */
+/* ****************** */
+
+/* ************** */
+/* HOUR MINUTE UI */
+/* ************** */
+div.hour-minute-ui input.hours {
+	display: inline-block;
+	width: 2em;
+	text-align: right;
+}
+
+div.hour-minute-ui input.minutes {
+	display: inline-block;
+	width: 2em;
+	text-align: right;
+}
+
+div.hour-minute-ui div.separator {
+	display: inline-block;
+	width: 0.4em;
+	text-align: center;
+}

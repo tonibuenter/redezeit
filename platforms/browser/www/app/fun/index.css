@@ -1,0 +1,167 @@
+body {
+	padding: 1em;
+}
+
+#main {
+	padding: 3em;
+	border: #DADADA 2px solid;
+	border-radius: 1em;
+}
+
+a.my-program {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.6em;
+	color: #7BA7FF;
+	margin: 1em;
+	font-size: 1.4em;
+	font-weight: 800;
+	border: transparent 2px solid;
+}
+
+a.my-program:hover {
+	border: #DADADA 2px solid;
+	border-radius: 1em;
+	background-color: #ECF3F9;
+}
+
+a.my-program:before {
+	margin: 0.4em;
+}
+
+div.einmaleins * {
+	font-family: Arial;
+}
+
+div.einmaleins div.levels {
+	display: block;
+	font-size: 1em;
+	margin-bottom: 2em;
+	margin-top: 1em;
+}
+
+div.einmaleins div.levels a.level-button {
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin-right: 2em;
+	padding: 0.4em;
+	display: inline-block;
+	color: #ADADAD;
+}
+
+div.einmaleins div.levels a.level-button.selected {
+	background-color: #ADADAD;
+	border-radius: 0.6em;
+	font-weight: bold;
+	color: white;
+}
+
+div.einmaleins div.question {
+	display: inline-block;
+	font-size: 2em;
+}
+
+div.einmaleins input.result {
+	display: inline-block;
+	font-size: 2em;
+	margin-left: 1em;
+	width: 4em;
+	border: none;
+	border-bottom: 2px solid gray;
+}
+
+div.einmaleins div.result {
+	display: inline-block;
+	font-size: 2em;
+	margin-left: 1em;
+	width: 4em;
+	border: none;
+	border-bottom: 2px solid gray;
+}
+
+div.einmaleins i.ok-notok {
+	font-family: FontAwesome;
+	font-size: 2em;
+	padding: 0em;
+	border-radius: 1em;
+	margin-left: -1em;
+}
+
+div.einmaleins i.ok-notok.ok {
+	color: #44F344;
+}
+
+div.einmaleins i.ok-notok.notok {
+	color: red;
+}
+
+div.einmaleins div.question-panel {
+	height: 5em;
+}
+
+div.einmaleins div.score-panel {
+	margin-top: 1em;
+}
+
+div.einmaleins div.score-panel i.score-star {
+	font-family: FontAwesome;
+	color: yellow;
+	font-size: 2em;
+	background: #D0CECE;
+	padding: 0.2em;
+	border-radius: 1em;
+}
+
+div.einmaleins div.award-trunk i.score-award {
+	font-family: FontAwesome;
+	color: gold;
+	font-size: 2em;
+	background: #100700;
+	padding: 0.2em;
+	border-radius: 1em;
+	margin: 0.2em;
+	box-shadow: 0.2em 0.2em 0.4em gray;
+	min-width: 1em;
+	text-align: center;
+}
+
+div.einmaleins div.award-trunk i.score-award-amount {
+	font-size: 1.6em;
+	background-color: gold;
+	padding: 0.2em;
+	border-radius: 1em 0em 0em 1em;
+	margin: 0.2em;
+	box-shadow: 0.2em 0.2em 0.4em grey;
+	text-align: center;
+	font-style: normal;
+	margin-right: -0.8em;
+	margin-left: 0.4em;
+	padding-right: 1em;
+	padding-left: 0.4em;
+}
+
+div.einmaleins div.award-trunk {
+	display: inline-block;
+	xpadding: 1em;
+	/* border: 1px solid; */
+	border-radius: 1em;
+	xbackground: #EFEFEF;
+}
+
+div.einmaleins div.score-panel i.score-star {
+	margin-left: -0.2em;
+}
+
+div.einmaleins div.score-panel i.score-star.space-before {
+	margin-left: 0.2em;
+}
+
+div.einmaleins div.score-panel i.score-star.fa-times {
+	color: red;
+}
+
+div.einmaleins div.score {
+	font-size: 2em;
+	margin-top: 1em;
+	color: orange;
+}

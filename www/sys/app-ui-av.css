@@ -1,0 +1,300 @@
+/* ----------- */
+/* TT3 GENERAL */
+/* ----------- */
+div.app-ui-av {
+	position: relative;
+}
+
+div.app-ui-av div.app-ui-av-dialog {
+	position: fixed;
+	top: 30%;
+	bottom: 30%;
+	left: 20%;
+	background: white;
+	right: 30%;
+	text-align: center;
+	border-radius: 1em;
+	border: solid 1em lightgray;
+	opacity: 0.9;
+	display: none;
+	z-index: 1000;
+}
+
+div.app-ui-av div.app-ui-av-dialog div.confirmation-text {
+	margin-top: 4em;
+	line-height: 2em;
+  margin-bottom: 1.2em;
+}
+
+div.app-ui-av div.stacked2-ui {
+	border: none;
+}
+
+div.app-ui-av div.hidden-body div.buttons {
+	display: none;
+}
+
+div.app-ui-av {
+	width: 100%;
+	float: none;
+}
+
+
+div.app-ui-av div.footer {
+	font-weight: bold;
+	padding: 4px;
+	border: gray 1px dashed;
+	margin-top: 6px;
+	background: GhostWhite;
+}
+
+
+div.app-ui-av div.stacked-ui div.header div.title {
+	
+}
+
+/* --------------- */
+/* TT3-ui TABLE UI */
+/* --------------- */
+div.table-ui {
+	padding: 1em;
+	position: relative;
+}
+
+/* Found: 57 Displaying: ... */
+div.table-ui div.title {
+	font-style: italic;
+	padding: 0.2em;
+}
+
+div.table-ui div.field-column {
+	padding: 0.2em;
+	width: 200px;
+}
+
+div.table-ui div.toolbar-ui {
+	
+}
+
+/* table-actions */
+div.table-ui div.table-actions.actions {
+	width: 100%;
+	padding: 0.4em;
+}
+
+div.table-ui div.main {
+	
+}
+
+div.table-ui div.header-table {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 0.4em 0.4em 0 0;
+}
+
+/** header-table row */
+div.table-ui div.header-table div.grid-row {
+	padding: 2px;
+}
+
+div.table-ui div.header-table div.grid-row input {
+	width: 70%;
+}
+
+div.table-ui div.filter-placeholder {
+	content: ' ';
+	border: solid red 0px;
+}
+
+div.table-ui div.field-name {
+	vertical-align: bottom;
+	width: 200px;
+	font-weight: 600;
+}
+
+div.table-ui div.field-value {
+	vertical-align: middle;
+}
+
+div.table-ui div.field-column div.label-cell {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 0.4em;
+}
+
+
+div.table-ui div.field-column div {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+div.table-ui div.data-table div.grid-row.even {
+	border: 1px solid LightGray;
+	background-color: rgb(247, 247, 247);
+	xtransition: background-color 1s ease 0.3s;
+}
+
+div.table-ui div.data-table div.grid-row.odd {
+	border: 1px solid LightGray;
+	background-color: white;
+	xtransition: background-color 1s ease 0.3s;
+}
+/** all field value from the data table */
+div.fields-ui div.detail-table div.grid-row {
+	margin: 0.6em 0.2em 0.6em 0.2em;
+}
+
+div.fields-ui div.field-name {
+	width: 120px;
+	font-weight: 600;
+	vertical-align: top;
+}
+
+div.fields-ui div.field-value {
+	width: 480px;
+	vertical-align: top;
+}
+
+div.fields-ui div.detail-buttons {
+	margin: 1em 0em 1em 0em;
+}
+
+/** cell with the row action buttons */
+div.table-ui div.row-select-action {
+	cursor: pointer;
+}
+
+div.table-ui div.field-column-action-column {
+	white-space: nowrap;
+	width: auto;
+}
+
+div.table-ui div.field-name-action-column {
+	display: none;
+}
+
+div.table-ui div.data-table div.grid-row.selected {
+	background-color: rgb(248, 181, 117);
+}
+
+
+/* -- */
+/* ACTION COLUMN HEADER */
+/* -- */
+div.table-ui div.headerTable div.grid-row div.grid-cell.header-action-column *
+	{
+	visibility: hidden;
+}
+
+div.app-ui-av div.select img.busy {
+	padding: 10px;
+}
+
+div.app-ui-av div.select table.headerTable, div.app-ui-av div.select div.headerTable
+	{
+	border-collapse: collapse;
+}
+
+div.app-ui-av div.select table.headerTable td, div.app-ui-av div.select div.headerTable div.grid-cell
+	{
+	min-height: 46px;
+	overflow: hidden;
+	padding: 2px 1px 2px 1px;
+	/* background-color: rgb(231, 228, 225); */
+}
+
+div.app-ui-av div.select table.headerTable td div, div.app-ui-av div.select div.headerTable div.grid-cell div
+	{
+	xfont-size: 1.4em;
+	font-weight: bold;
+	xcolor: rgb(242, 125, 11);
+	overflow: hidden;
+	width: inherit;
+	padding-left: 2px;
+}
+
+div.app-ui-av div.select table.headerTable td input, div.app-ui-av div.select div.headerTable div.grid-cell input
+	{
+	xfont-size: 11px;
+	font-weight: bold;
+	padding: 0.4em;
+	background-color: rgb(250, 250, 250);
+	border: none;
+	margin: 0.2em;
+	border-bottom: solid 1px gray;
+	padding-bottom: 2px;
+	color: darkgrey;
+	font-style: italic;
+	/* visibility: inherit; */
+}
+
+div.app-ui-av div.select div.data {
+	/* overflow: auto; */
+	/* height: 360px; */
+	padding: 4px 0px;
+	margin: 4px 0px;
+	border: GhostWhite 1px dashed;
+	position: relative;
+	background: white;
+}
+
+div.app-ui-av div.select table.dataTable, div.app-ui-av div.select div.dataTable
+	{
+	padding-left: 2px;
+	border-collapse: collapse;
+	/* border: solid rgb(215, 77, 77) 1px; */
+	/* border-radius: 4px; */
+	/* background: white; */
+}
+
+div.app-ui-av div.select table.dataTable tr, div.app-ui-av div.select div.dataTable div.grid-row
+	{
+	cursor: pointer;
+	line-height: 2.2em;
+}
+
+div.app-ui-av div.select table.dataTable tr.selected, div.app-ui-av div.select div.dataTable div.grid-row.selected
+	{
+	background-color: rgb(255, 234, 188) !important;
+}
+
+div.app-ui-av div.select table.dataTable tr td, div.app-ui-av div.select div.dataTable div.grid-row td.grid-cell
+	{
+	vertical-align: top;
+	xfont-size: 11px;
+	overflow: hidden;
+	padding: 1px;
+}
+
+div.app-ui-av div.select table.dataTable tr td div, div.app-ui-av div.select div.dataTable div.grid-row div.grid-cell div
+	{
+	padding-left: 0.2em;
+}
+
+/* ------------------------ */
+/* TT3-ui TABLE UI type=div */
+/* ------------------------ */
+div.grid-table {
+	xdisplay: table;
+}
+
+div.grid-cell {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+div.grid-row {
+	margin-bottom: -1px;
+}
+
+/* ---------------- */
+/* TT3-ui FIELDS UI */
+/* ---------------- */
+div.fields-ui {
+	padding: 1em;
+}
+
+div.app-ui-av div.fields-ui div.buttons {
+	padding: 4px;
+}

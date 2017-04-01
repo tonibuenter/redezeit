@@ -1,0 +1,179 @@
+h3 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+body.soc .initial-hidden {
+	display: none;
+}
+
+.slider h1, .slider h2, .slider h3, .slider h4 {
+	background-color: rgba(100, 100, 100, 0.6);
+}
+
+div.buttons>* {
+	margin: 0.4em;
+}
+
+/* ******** */
+/* CHAT APP */
+/* ******** */
+div.chat div.no-message {
+	margin: 2em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	/* 	#ffc400 amber accent-3 */
+	background-color: #ffc400;
+}
+
+div.chat div.no-chats {
+	margin: 2em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	/* 	#ffc400 amber accent-3 */
+	background-color: #ffc400;
+}
+
+div.chat-message-edit {
+	display: flex;
+	padding: 0em 1em;
+	padding-top: 0.4em;
+	background-color: rgba(50, 64, 50, 0.6);
+}
+
+div.chat-message-edit div.input {
+	flex-grow: 1;
+}
+
+div.chat-message-edit div.input input {
+	font-size: 1.2em;
+	color: white;
+}
+
+div.chat chat-item.selected {
+	/* 	#ffc400 amber accent-3 */
+	background-color: #ffc400;
+}
+
+div.chat div.message-list {
+	position: relative;
+}
+
+div.chat div.message-list a.chat-message.end {
+	position: absolute;
+	bottom: 0px;
+	left: 1em;
+	font-size: 2em;
+	color: rgba(255, 255, 255, 0.66);
+	xcolor: red;
+}
+
+div.chat-messages div.chat-message {
+	background-color: rgba(187, 167, 128, 0.29);
+	border-right: 2em transparent solid;
+	/* border-bottom: solid 1px rgba(187, 167, 128, 1); */
+	border-radius: 1em;
+	padding: 0.4em;
+	margin-right: 2em;
+	margin: 0.2em;
+}
+
+div.chat-messages div.chat-message.me {
+	background-color: rgba(247, 247, 247, 0.29);
+	margin-right: 0em;
+	margin-left: 2em;
+}
+
+div.chat-messages div.chat-message div.chat-creator {
+	font-size: 0.8em;
+	color: #1b1b1b;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+div.chat-messages div.chat-message.me div.chat-creator {
+	color: #b39d75;
+}
+
+div.chat-messages div.chat-message div.chat-created {
+	font-size: 0.8em;
+	color: #b39d75;
+	display: inline-block;
+}
+
+div.chat-messages div.collection-item.chat-message div.chat-message {
+	
+}
+
+div.chat div.title-1 {
+	font-size: 1.4em;
+	/* 	#424242 grey darken-3 */
+	color: #424242;
+}
+
+div.chat div.chat {
+	
+}
+
+div.chat-toolbar-back {
+	white-space: nowrap;
+	background-color: black;
+	color: white;
+}
+
+div.chat-toolbar-back div.label {
+	display: inline-block;
+	overflow-x: hidden;
+	vertical-align: middle;
+}
+
+div.chat-select-ui div.chat-list {
+	xbackground-color: red;
+}
+
+div.chat-select-ui div.chat-item {
+	cursor: pointer;
+	color: #3e2723;
+	padding: 1em;
+	border: solid 1px #d0d0d0;
+	margin: 0.4em;
+	border-radius: 1em;
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+div.chat-select-ui div.chat-item.disabled {
+	font-style: italic;
+	color: gray;
+	cursor: default;
+}
+
+div.chat-select-ui div.chat-item div.chat-title {
+	display: inline-block;
+}
+
+body.soc div.row.XXXchat-message-bottom {
+	background-color: rgba(181, 157, 117, 0.78);
+	padding: 0.4em;
+	padding-left: 1em;
+	margin-bottom: 0px;
+}
+
+body.soc div.row.chat-message-bottom {
+	background-color: rgba(181, 157, 117, 0.78);
+	position: fixed;
+	bottom: 0em;
+	left: 0px;
+	right: 0px;
+	padding: 0.4em;
+	padding-left: 1em;
+	margin-bottom: 0px;
+}
+
+body.soc div.row.chat-message-bottom input {
+	font-size: 1.2em;
+	background-color: rgba(181, 157, 117, 0.78);
+	color: white;
+	padding-left: 1em;
+}

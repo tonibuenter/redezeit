@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ******** -->
+<!-- REDEZEIT -->
+<!-- ******** -->
+
+<head>
+<meta charset="UTF-8">
+<title>Time Mass</title>
+<meta name="viewport"
+	content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+
+
+<link rel="shortcut icon" href="app/redezeit/images/favicon.png?R=03"
+	type="image/png">
+	
+<link rel="icon"          href="app/redezeit/images/favicon.png?R=03"
+	type="image/x-icon">
+
+<!-- --------------- -->
+<!-- JavaScript LIBS -->
+<!-- --------------- -->
+
+<script src="libs/underscore.js?R=01" type="text/javascript"></script>
+
+<script src="libs/jquery-1.11.1.js"></script>
+
+<script type="text/javascript" src="libs/jquery.form.js?RELEASE=2014q1"></script>
+
+<script src="libs/moment-with-locales.js"></script>
+
+<script src="libs/remotequery-0.9.0.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="libs/CryptoJS/rollups/sha1.js"></script>
+
+<script type="text/javascript" src="libs/CryptoJS/rollups/aes.js"></script>
+
+<script src="libs/fastclick.js"></script>
+
+<!-- ------------------- -->
+<!-- MATERIALIZE CSS -->
+<!-- ------------------- -->
+
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="libs/materializecss/css/materialize.css" />
+
+<script type="text/javascript"
+	src="libs/materializecss/js/materialize.js"></script>
+
+<!-- SCROLL TO -->
+<!-- https://github.com/flesler/jquery.scrollTo -->
+<!-- IMPORTANT this will overwrite the materializecss scrollTo -->
+
+<script src="libs/scrollTo.js"></script>
+
+
+<!-- ------------------- -->
+<!-- AMINMATE CSS -->
+<!-- ------------------- -->
+<!-- https://github.com/daneden/animate.css -->
+
+<link type="text/css" rel="stylesheet" href="libs/animate.css" />
+
+<!-- ------- -->
+<!-- CHARTJS -->
+<!-- ------- -->
+<!-- https://github.com/chartjs/Chart.js -->
+<script src="libs/chartjs/Chart.bundle.js"></script>
+
+
+
+<style type="text/css">
+@font-face {
+	font-family: 'material-icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(libs/material-design-icons/iconfont/MaterialIcons-Regular.eot);
+	/* For IE6-8 */
+	src: local('Material Icons'), local('MaterialIcons-Regular'),
+		url(libs/material-design-icons/iconfont/MaterialIcons-Regular.woff2)
+		format('woff2'),
+		url(libs/material-design-icons/iconfont/MaterialIcons-Regular.woff)
+		format('woff'),
+		url(libs/material-design-icons/iconfont/MaterialIcons-Regular.ttf)
+		format('truetype');
+}
+
+.material-icons {
+	font-family: 'material-icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+</style>
+
+<!-- -------------------------------------------- -->
+<!-- JavaScript Common Libraries (JGround Anakapa)-->
+<!-- -------------------------------------------- -->
+
+<script type="text/javascript" src="sys/app-base.js?RELEASE=2014q1"></script>
+<script type="text/javascript" src="sys/app-data.js?RELEASE=2014q1"></script>
+<script type="text/javascript" src="sys/app-ui.js?RELEASE=2014q1"></script>
+<script type="text/javascript" src="sys/app-ui_md.js?RELEASE=2014q1"></script>
+
+
+<link type="text/css" href="sys/app-ui_md.css?RELEASE=2014q1"
+	rel="stylesheet" />
+
+<!-- -------------- -->
+<!-- THIS PAGE -->
+<!-- -------------- -->
+
+<link type="text/css"
+	href="app/redezeit/redezeit-mobile.css?RELEASE=2014q1" rel="stylesheet" />
+<script type="text/javascript"
+	src="app/redezeit/redezeit-mobile.js?RELEASE=2014q1"></script>
+
+<style type="text/css">
+div.Container-Top {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+div.Header-Top {
+	xheight: 3em;
+	background-color: rgba(92, 138, 51, 0.52);
+}
+
+div.Center-Top {
+	height: 3em;
+	background-color: rgba(236, 236, 236, 0.62);
+	flex-grow: 1;
+	overflow-y: scroll;
+	xbackground-color: rgba(189, 115, 0, 0.77);
+	background-image: url("app/redezeit/images/owl.jpg");
+	background-size: cover;
+}
+
+div.Footer-Top {
+	background-color: rgba(224, 224, 224, 0.39);
+}
+</style>
+
+
+
+
+</head>
+
+
+
+<body class="redezeit">
+
+	<!-- ------- -->
+	<!-- CORDOVA -->
+	<!-- ------- -->
+
+	<script type="text/javascript" src="cordova.js"></script>
+
+
+	<div id="container-top" class="Container-Top">
+
+		<div id="header-top" class="Header-Top">
+
+			<!-- TOP TOOLBAR -->
+
+			<nav id="nav-apps">
+				<div id="header" class="nav-wrapper red darken-3">
+
+					<ul class="row">
+						<li class="col s3 m3 l2"><a id="logo" href="#"><img
+								class="top-logo" src="app/redezeit/images/logo.png"></a></li>
+						<li class="col s9 m9 l10"><a id="speaker-time" href="#">start</a></li>
+
+						<li class="col s3 m3 l2"><a id="misc" href="#"><i
+								class="material-icons">more_vert</i></a></li>
+					</ul>
+				</div>
+
+			</nav>
+
+		</div>
+
+		<div id="center-top" class="Center-Top">
+
+			<!-- MAIN -->
+
+			<div class="main container initial-hidden" id="main"></div>
+
+			<!-- Logo -->
+
+			<div class="about container initial-hidden" id="logo-main">
+
+				<div class="section">
+					<h4>RedeZeit</h4>
+					<div>Thank you for using RedeZeit (speaker time). This app
+						has been created by OOIT.com AG, Zurich.</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div id="footer-top" class="Footer-Top">
+		</div>
+<!-- 		<div id="log" class="Footer-Top initial-hidden log">log</div> -->
+	</div>
+	<script type="text/javascript">
+    $(function() {
+      FastClick.attach(document.body);
+      REDEZEIT_mobile.initPage();
+    });
+  </script>
+</body>
+</html>
+
+

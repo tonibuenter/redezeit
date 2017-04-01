@@ -1,0 +1,134 @@
+* {
+	font-family: Arial;
+}
+
+#header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 38px;
+	background-color: #ddd;
+	z-index: 1000;
+	opacity: 0.8;
+}
+
+#header ul {
+	display: block;
+	margin: 2px;
+	list-style: none;
+}
+
+#header ul li {
+	display: inline-block;
+	padding: 4px;
+	margin: 1px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	border: 1px solid blue;
+	color: blue;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+#header ul li:ACTIVE {
+	border-color: red;
+}
+
+#play div.users div.user.selected {
+	
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 30px;
+	background-color: yellow;
+}
+
+div.content {
+	position: relative;
+	top: 38px;
+}
+
+#xplay div.users div.button {
+	position: relative;
+	display: inline-block;
+	padding: 4px;
+	cursor: pointer;
+	border: blue solid 1px;
+	padding: 4px;
+	margin: 4px;
+}
+
+div.button-anim {
+	background-color: lightGray;
+}
+
+div.button {
+	display: inline-block;
+	width: 8em;
+	position: relative;
+	height: 20px;
+	cursor: pointer;
+	border: blue solid 1px;
+	margin: 4px;
+	padding: 4px;
+	color: blue;
+	position: relative;
+	font-size: 1.2em;
+}
+
+div.button span {
+	display: block;
+	position: absolute;
+	top: 5px;
+}
+
+#play div.actions {
+	position: relative;
+}
+
+#play div.actions input {
+	/* 	height: 2em; */
+	/* 	margin: 4px; */
+	/* 	width: 16em; */
+	padding: .4em;
+	line-height: 1.4em;
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	font-size: 1.4em;
+}
+
+#play div.users div.user {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	border: red solid 1px;
+	margin: 4px;
+	padding: 4px;
+}
+
+#play div.users div.user span.name {
+	display: block;
+	position: absolute;
+	top: 5px;
+}
+
+#play div.users div.user span.time {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 25px;
+}
+
+#play div.users div.user.break span.time {
+	display: none;
+}

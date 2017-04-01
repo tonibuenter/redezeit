@@ -1,0 +1,58 @@
+//
+// redezeit
+//
+
+
+//
+// DIRECTORIES
+//
+
+def appName = 'redezeit'
+def wwwDir = 'www/';
+def origDir = '/Users/tonibuenter/_proj/ws/jground-anakapa/WebContent/'
+
+
+
+import org.apache.tools.ant.filters.ReplaceTokens
+
+apply plugin: 'java'
+
+def version =  (new Date()).format('yyyy_MM_dd_HHmm')
+
+task coAll() {
+
+		delete wwwDir + 'index.html'
+	
+		copy {
+        from origDir
+		include  'index-cordova.html'
+		
+		include  'sys/**'
+		exclude  'sys/z-**'
+		
+		include  'app/jground/jground.js'
+		include  'app/'+appName+ '/**'
+		exclude  'app/'+appName+'/assets-workbench/**'
+		exclude  'app/'+appName+'/index-cordova.html'
+  		into wwwDir
+		rename('index-cordova.html', 'index.html')
+		}
+
+		copy {
+		from origDir + 'libs'
+        include  'jquery-1.11.1.js'
+        include  'remotequery-0.9.0.js'
+        include  'materializecss/**'
+        include  'material-design-icons/**'
+        include  'animate.css'
+        include  'font-awesome-4.5.0/**'
+        include  'moment-with-locales.js'
+        include  'initial.js'
+        include  'chartjs/**'
+        include  'fastclick.js'
+        include  'scrollTo.js'
+  		into wwwDir + 'libs'
+		}
+
+}
+
