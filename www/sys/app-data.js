@@ -16,13 +16,13 @@ var APP_data = APP_data || {};
   /**
    * @memberOf APP_data
    */
-  function loadAppProperties(callback) {
-    rQ.call('AppProperties.anakapa', {}, function(data) {
-      propertiesMap = rQ.toMap(data, 'name');
-      callback(propertiesMap);
-    });
-  }
-  APP_data.loadAppProperties = loadAppProperties;
+  // function loadAppProperties(callback) {
+  //   rQ.call('AppProperties.anakapa', {}, function(data) {
+  //     propertiesMap = rQ.toMap(data, 'name');
+  //     callback(propertiesMap);
+  //   });
+  // }
+  // APP_data.loadAppProperties = loadAppProperties;
 
   //
   // APP PROPERTY -start-
@@ -42,21 +42,21 @@ var APP_data = APP_data || {};
   /**
    * @memberOf APP_data
    */
-  function loadLabels(lang, callback) {
-    if (_.isFunction(lang)) {
-      callback = lang;
-      lang = null;
-    }
-    lang = lang || APP_base.localStorage.get('selected-lang');
-
-    rQ.call('Labels.selectAll', {
-      'lang' : lang
-    }, function(data) {
-      labelsMap = rQ.toMap(data, 'name');
-      callback(data);
-    });
-  }
-  APP_data.loadLabels = loadLabels;
+  // function loadLabels(lang, callback) {
+  //   if (_.isFunction(lang)) {
+  //     callback = lang;
+  //     lang = null;
+  //   }
+  //   lang = lang || APP_base.localStorage.get('selected-lang');
+  //
+  //   rQ.call('Labels.selectAll', {
+  //     'lang' : lang
+  //   }, function(data) {
+  //     labelsMap = rQ.toMap(data, 'name');
+  //     callback(data);
+  //   });
+  // }
+  // APP_data.loadLabels = loadLabels;
 
   //
   // LOAD DATA POST LOGIN
@@ -64,28 +64,28 @@ var APP_data = APP_data || {};
   /**
    * @memberOf APP_data
    */
-  function loadDataPostLogin(lang, callback) {
-    var requests = [];
-
-    requests.push({
-      'serviceId' : 'CodeTable.selectAll',
-      'parameters' : {
-        'lang' : lang
-      }
-    });
-
-    requests.push({
-      'serviceId' : 'AppJson.selectAll'
-    });
-
-    rQ.callRqMulti(requests, function(serviceDataList) {
-      codeTableMap = rQ.toListMap(serviceDataList[0], 'tableName');
-      appJsonMap = rQ.toMap(serviceDataList[1], 'name');
-      callback(serviceDataList);
-    });
-
-  }
-  APP_data.loadDataPostLogin = loadDataPostLogin;
+  // function loadDataPostLogin(lang, callback) {
+  //   var requests = [];
+  //
+  //   requests.push({
+  //     'serviceId' : 'CodeTable.selectAll',
+  //     'parameters' : {
+  //       'lang' : lang
+  //     }
+  //   });
+  //
+  //   requests.push({
+  //     'serviceId' : 'AppJson.selectAll'
+  //   });
+  //
+  //   rQ.callRqMulti(requests, function(serviceDataList) {
+  //     codeTableMap = rQ.toListMap(serviceDataList[0], 'tableName');
+  //     appJsonMap = rQ.toMap(serviceDataList[1], 'name');
+  //     callback(serviceDataList);
+  //   });
+  //
+  // }
+  // APP_data.loadDataPostLogin = loadDataPostLogin;
 
   //
   // LOAD APP JSON
@@ -259,25 +259,25 @@ var APP_data = APP_data || {};
   /**
    * @memberOf APP_data
    */
-  function firstObject(data) {
-    var list, r;
-    if (data) {
-      if (_.isBoolean(data.hasMore)) {
-        list = rQ.toList(data);
-        if (list.length > 0) {
-          r = list[0];
-        }
-      } else if (_.isArray(data)) {
-        if (data.length > 0) {
-          r = data[0];
-        }
-      } else if (_.isObject(data)) {
-        r = data;
-      }
-    }
-    return r;
-  }
-  APP_data.firstObject = firstObject;
+  // function firstObject(data) {
+  //   var list, r;
+  //   if (data) {
+  //     if (_.isBoolean(data.hasMore)) {
+  //       list = rQ.toList(data);
+  //       if (list.length > 0) {
+  //         r = list[0];
+  //       }
+  //     } else if (_.isArray(data)) {
+  //       if (data.length > 0) {
+  //         r = data[0];
+  //       }
+  //     } else if (_.isObject(data)) {
+  //       r = data;
+  //     }
+  //   }
+  //   return r;
+  // }
+  // APP_data.firstObject = firstObject;
 
   //
   // USER MESSAGES
@@ -362,9 +362,9 @@ var APP_data = APP_data || {};
   /**
    * @memberOf APP_data
    */
-  rQ.noSession(function noSession() {
-    window.location.reload(true);
-  });
+  // rQ.noSession(function noSession() {
+  //   window.location.reload(true);
+  // });
 
   //
   // INDEX DB / IDB
@@ -444,8 +444,8 @@ var APP_data = APP_data || {};
   }
 
   APP_data.callIdb = callIdb;
-  
-  
+
+
   //
   // DATA TREE
   //
